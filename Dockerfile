@@ -13,7 +13,7 @@ RUN make -j4
 RUN make install
 
 # Build libresect.so
-RUN DEBIAN_FRONTEND=noninteractive TZ=Etc/UTC apt-get install --yes ninja-build git python3 libtool zlib1g-dev
+RUN DEBIAN_FRONTEND=noninteractive TZ=Etc/UTC apt-get install --yes ninja-build git python3 libtool-bin zlib1g-dev
 WORKDIR /opt
 RUN git clone https://github.com/borodust/libresect.git
 WORKDIR /opt/libresect
