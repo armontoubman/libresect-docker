@@ -1,3 +1,5 @@
+FROM ubuntu:20.04
+
 RUN apt update
 
 # Build and install cmake 3.22.2 from source
